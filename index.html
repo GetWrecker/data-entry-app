@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Entry Recorder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <header>
+      <h1>Data Recorder</h1>
+      <p>Simple, clean, and fast data logging</p>
+    </header>
+
+    <form id="dataForm" class="card">
+      <div class="input-group">
+        <input type="text" id="name" required>
+        <label>Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="text" id="info" required>
+        <label>Information</label>
+      </div>
+
+      <button type="submit">+ Add Entry</button>
+    </form>
+
+    <section class="card">
+      <div class="list-header">
+        <h2>Records</h2>
+        <span id="count"></span>
+      </div>
+
+      <ul id="dataList"></ul>
+      <p id="emptyState">No records yet. Start adding data.</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
